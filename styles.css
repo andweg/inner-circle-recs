@@ -1,0 +1,138 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+:root {
+  --color1: #876445;
+  --color2: #CA965C;
+  --color3: #EEC373;
+  --color4: #F4DFBA;
+}
+
+/*
+  * {
+    border: 1px solid red;
+  }
+*/
+
+body {
+  background-color: var(--color4);
+  color: var(--color1);
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 1.2em;
+}
+
+header p {
+  font-size: 75%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color1);
+}
+
+h1 {
+  line-height: 1.5em;
+}
+
+.flex {
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.flex, .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button, .boardgame {
+  border: 2px solid var(--color1);
+  border-radius: 12px;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: var(--color3);
+  color: var(--color1);
+}
+
+.boardgame {
+  justify-content: space-evenly;
+  padding: 10px;
+  width: 400px;
+  height: 200px;
+}
+
+.boardgame-cover {
+  float: left;
+  width: 35%;
+}
+
+.boardgame-cover img {
+  max-width: 120px;
+}
+
+.boardgame-details {
+  float: right;
+  width: 60%;
+  height: 100%;
+}
+
+.boardgame-title {
+  padding: 5px;
+  float: center;
+  font-size: 150%;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.boardgame-playtime {
+  padding: 2px;
+  margin-bottom: 5px;
+}
+
+.boardgame-playtime img {
+  justify-content: center;
+  align-items: center;
+  height: 12px;
+  margin-right: 2px;
+}
+
+.boardgame-tags {
+  font-size: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.boardgame-tags span {
+  margin: 1px;
+  padding: 1px;
+  border: 1px solid var(--color1);
+  border-radius: 12px;
+  background-color: var(--color3);
+  color: var(--color1);
+}
+
+.boardgame-theme {
+  font-weight: bold;
+}
+
+.boardgame-description {
+  margin-bottom: 5px;
+}
+
+.hidden {
+  display: none !important;
+}
